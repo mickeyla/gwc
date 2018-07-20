@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  rel="stylesheet"
+  href="mickey.css"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#About {background-color: #EFEBC9;}
+#Academics{background-color:#EFEBC9;}
+#Interests {background-color:#EFEBC9;}
+#Social {background-color:#EFEBC9;}
+</style>
+
+</head>
+
+
+<body>
+
+<font color= "#EFEBC9"><p><h4><strong><center> M I C K E Y L A C L A R K </center></p></strong></h4></font>
+
+<div id="About" class="tabcontent">
+  <font color= "black"> <h3>About</h3>
+<p>I am a 16 year old high school student aspiring to be an aerospace engineer!</p>
+</div> </font>
+
+<font color= black> <div id="Academics" class="tabcontent">
+  <h3>Academics</h3> </font>
+<font color= "black"> <p>I attend Mckinley Technology High School and will graduate in 2020. I plan to major in aerospace engineering in college. My dream is to work at NASA and work on taking humans to Mars! Obviously, I love engineering. For extracurriculars, I participate in robotics, GSA, and book club!</p>
+</div> </font>
+
+<font color= "black"><div id="Interests" class="tabcontent">
+  <h3>Interests</h3> </font>
+<font color= "black"> <p>I really enjoy a variety of things! I love coding and I view it as a hobby. Also, I love traveling! A goal of mine is to visit a majority of US states before 25 and across Eurasia before 35! In addition, I really love listening to music, reading, and going to concerts. </p>
+</div></font>
+
+<font color= "black"><div id="Social" class="tabcontent">
+  <h3>Social Media</h3></font>
+<font color= "black"><p> Instagram: <a href="https://www.instagram.com/mickeylaaaa/">mickeylaaaa</a></p></font>
+<font color= "black"><p> Snapchat: starligh.t</p></font>
+<font color= "black"><p> Email: clark.mickeyla@gmail.com</p></font>
+<font color= "black"><p> Linkedin: <a href="https://www.linkedin.com/in/mickeyla-clark-5b7b48167/">Mickeyla Clark</a></p></font>
+
+</div>
+
+<button class="tablink" onclick="openCity('About', this, '#EFEBC9')" id="defaultOpen">About</button>
+<button class="tablink" onclick="openCity('Academics', this, '#EFEBC9')">Academics</button>
+<button class="tablink" onclick="openCity('Interests', this, '#EFEBC9')">Interests</button>
+<button class="tablink" onclick="openCity('Social', this, '#EFEBC9')">Social Media</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<p>              </p>
+<p>                    </p>
+<p>                               </p>
+
+<center> <img src="https://78.media.tumblr.com/7fc0befd4b37528e9cd9ad2eea485c4e/tumblr_pc0s4rGHgJ1qb0bzxo1_1280.jpg" alt="Europe"> </center>
+<center> <img src="https://78.media.tumblr.com/64a072bd69235b113403253337b4d676/tumblr_pbknqiCW051r63tjzo1_1280.jpg" alt="Mountains" </center>
+<center> <img src="https://78.media.tumblr.com/69084648942cf7e3ef57c9b6757cde9f/tumblr_pc0ub7MEr81qb0bzxo1_1280.jpg" alt="Flowers" </center>
+
+
+</body>
+
+
+</html>
