@@ -1,0 +1,4 @@
+#Runs forever. Not smart.
+
+while True:
+  print ("forever looping")

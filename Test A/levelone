@@ -1,0 +1,31 @@
+from random import*
+
+beginning = "Hello, Welcome to the Name Generator!"
+print(beginning)
+
+femnames = ["Nancy", "Megan", "Emma", "Amanda", "Catherine", "Carrie", "Ashley", "Olivia", "Briana", "Helen", "Lil' Tay"]
+mascnames = ["James", "Brad", "Josh", "Cody", "Zach", "Elijah", "Conner", "Henry", "Ben", "David", "Lil' Pump"]
+neunames = ["Sam", "Alex", "Jamie", "Kendall", "Parker", "Quinn", "Devin", "Lee", "Taylor", "Charlie", "Lil' Peep"]
+lastname = ["Clark", "Smith", "Alvarez", "Blanchard", "Nelson", "Brown", "Williams-Peters", "Wesley"]
+print()
+aRandomIndex1 = randint(0,len(femnames)-1)
+
+choice = input("Would you like a feminine name, masculine name, or unisex names? (F/M/U)")
+if choice == "F":
+  print ("Great, here is a new name!")
+  print (femnames[aRandomIndex1])
+
+if choice == "M":
+  print ("Great, here is a new name!")
+  print (mascnames[aRandomIndex1])
+
+if choice == "U":
+  print ("Great, here is a new name!")
+  print (neunames[aRandomIndex1])
+
+lastnamechoice = input("Would you like to choose a last name as well? (Y/N)")
+if lastnamechoice == "Y":
+    print ("Great! Here's a new last name!")
+    print (lastname[aRandomIndex1])
+if lastnamechoice == "N":
+    print ("Okay, well I hope you enjoy your new first name!")

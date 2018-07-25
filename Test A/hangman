@@ -1,0 +1,43 @@
+bank = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+#stores every letter in the alphabet for user to guess
+lines = []
+#empty list to store guesses
+tries = 0
+#sets tries to zero as you'll be adding attempts
+word = input("Choose a word for player two to guess!: ")
+word = word.lower()
+if(word.isalpha() == False):
+    print("That isn't a word.")
+#allows user to input a word, makes the word lowercase, checks if word is a letter
+
+for i in range(len(word)):
+    lines.append("__")
+print(lines)
+#prints blanks for the length of the word. ex: prints four lines for a four letter word
+
+while True:
+    tries += 1
+    if (tries >= 7):
+        print("Game Over.")
+        break
+#breaks game if the user tries more than seven times, prints game over.
+
+    guess = input("Guess a Letter: ")
+    guess = guess.lower()
+    if (guess.isalpha()==False):
+        print("That's not a letter!")
+#allows user to guess a letter, checks if guess is a letter
+
+    if guess in word:
+        for i in range(len(word)):
+            if word[i] == guess:
+                lines[i] = guess
+    else:
+        print("Incorrect")
+#checks if guess is in the word or otherwise, prints Incorrect
+
+    print(lines)
+    if word[i] == guess:
+        print("Congrats! You got it!")
+        break
+#if the users guess is correct, prints congrats and breaks game.

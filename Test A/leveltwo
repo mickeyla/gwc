@@ -1,0 +1,55 @@
+from random import*
+
+beginning = "Hi, Welcome to Chillis."
+print(beginning)
+
+drinks = ["Water","Sprite", "Coca-Cola","Pepsi","Root Beer", "Fruit Juice"]
+burgers = ["Boss Burger", "Alex's Santa Fe Burger", "Chilli's Chilli Burger"]
+fajitas = ["Steak Fajita", "Chicken Fajita", "Black Bean and Veggie Fajita"]
+seafood = ["Ancho Salmon", "Cajun Shrimp Pasta", "Spicy Shrimp Taco"]
+general = ["Burgers", "Fajitas", "Seafood"]
+print()
+
+startdrink = "Would you like a drink? We have a select menu of drinks such as..."
+print(startdrink)
+for num in drinks:
+    print(num)
+
+drinkorder = input("So what drinks would you like?")
+drinkorder = drinkorder.lower()
+print("Okay, no problem. One", drinkorder, "coming right up")
+
+startfood = "Now, what would you like to eat? We have a select menu of food such as..."
+print(startfood)
+for num in general:
+    print(num)
+
+foodorder = input("So, what would you like to eat?")
+foodorder = foodorder.lower()
+
+if foodorder == "burgers":
+    print ("Okay! Here is our further selection of burgers...")
+    for num in burgers:
+        print (num)
+    while True:
+        burgerorder = input("So, which burger would you like to eat?")
+        print("Okay, one", burgerorder, "coming up.")
+        break
+
+if foodorder == "fajitas":
+    print ("Okay! Here is our further selection of fajitas...")
+    for num in fajitas:
+        print (num)
+    while True:
+        fajitaorder = input("So, which fajita would you like to eat?")
+        print("Okay, one", fajitaorder, "coming up.")
+        break
+
+if foodorder == "seafood":
+    print ("Okay! Here is our further selection of seafood...")
+    for num in seafood:
+        print (num)
+    while True:
+        seafoodorder = input("So, what would you like to eat?")
+        print("Okay, one", seafoodorder, "coming up.")
+        break

@@ -1,0 +1,19 @@
+#Taking user input and setting equal to variable word
+word = input("Type a word for someone to guess: ")
+
+# Converts the word to lowercase
+word = word.lower()
+
+# Checks if only letters are present
+if(word.isalpha() == False):
+	print("That's not a word!")
+
+#empty list that will store letter guesses
+guesses = []
+#Max tries
+maxfails = 7
+
+guesses.append()
+
+#take the user guess and set it equal to the variable guess
+guess = input("Guess a letter: ")

@@ -1,0 +1,23 @@
+from random import*
+
+start = "Hello! I'm going to guess a number between 1-20!"
+print(start)
+
+aRandomNumber = randint(1, 20)
+i = int(input("Is the number...", aRandomNumbers , "?"))
+cputries = 0
+
+while True:
+  cputries += 1
+  if(cputries >= 4):
+    print("Game Over.")
+    break
+  if i < 10:
+    print("No? Trying a higher number.")
+  elif i > 10:
+    print("No? Trying a lower number.")
+  else:
+    print("Yes? Yay! I guessed correctly.")
+    break
+
+i = int(input("Guess a number between 1-20: "))
